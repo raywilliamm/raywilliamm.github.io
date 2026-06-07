@@ -3,99 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ray William | Cybersecurity Specialist</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0d1117;
-      color: #c9d1d9;
-    }
-    header {
-      text-align: center;
-      padding: 50px 20px 20px;
-    }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.2em;
-    }
-    h2 {
-      color: #58a6ff;
-    }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .projects, .contact {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background-color: #161b22;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    a {
-      color: #58a6ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta name="description" content="Ray William — Threat Intelligence analyst expanding into AI + Cybersecurity. CTI reporting, MITRE ATT&CK, and AI-powered security tooling." />
+  <title>Ray William | Threat Intelligence &amp; AI Security</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <nav>
+    <span class="nav-mark">RW_</span>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="certifications.html">Certs</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <p class="label">// threat intel · ai security</p>
     <h1>Ray William</h1>
-    <h2>Cybersecurity Specialist</h2>
+    <p class="role">Threat Intelligence Analyst — Beirut, Lebanon</p>
+    <p class="tagline">
+      Three years deep in threat intelligence — IOC enrichment, TTP mapping, alert triage
+      for banking and enterprise clients. Now building the AI layer that does the first
+      pass before it reaches an analyst's desk.
+    </p>
+    <div class="cta-row">
+      <a class="btn primary" href="https://github.com/raywilliamm" target="_blank" rel="noopener">github →</a>
+      <a class="btn" href="https://www.linkedin.com/in/ray-william-22aa441b3/" target="_blank" rel="noopener">linkedin →</a>
+      <a class="btn" href="certifications.html">certifications →</a>
+    </div>
   </header>
 
-  <section>
-    <h2>About</h2>
+  <section id="about">
+    <div class="section-head"><span class="index">01</span><h2>About</h2></div>
+    <p class="lede">
+      I'm a Threat Intelligence analyst at Absega (ITG Holding), handling CTI reporting,
+      IOC enrichment, threat actor profiling, and MITRE ATT&amp;CK TTP mapping for banking
+      and enterprise customers across Lebanon — triaging alerts, tracking adversary
+      behavior, turning raw indicators into reports people actually act on.
+    </p>
     <p>
-      I am a cybersecurity specialist with expertise in threat intelligence, OSINT, and penetration testing.
-      I have a strong background in identifying and mitigating security risks through comprehensive threat analysis
-      and proactive security measures.
+      I work at the intersection of AI and security — not just as a user of AI tools, but
+      hands-on with the infrastructure behind them. I run local LLMs (Ollama + Qwen) on a
+      VM, building a pipeline that cuts false-positive alert volume in SOCRadar feeds for
+      one of our customers. Alongside that, I use Claude (API + Claude Code) to design and
+      automate the surrounding workflows — two ends of the same problem: self-hosted models
+      for data that can't leave the building, frontier models for the engineering work
+      around them.
+    </p>
+    <p class="dim">
+      The throughline: AI-powered security — building the systems that defend, and
+      understanding how those same AI systems get attacked — backed by the MAD20 MITRE
+      ATT&amp;CK certification track (CTI, Fundamentals, and Adversary Emulation done so far).
     </p>
   </section>
 
-  <section>
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Threat Intelligence Automation</h3>
-        <p>Developed automation scripts for advanced threat detection and analysis.</p>
-        <a href="https://github.com/raywilliamm/Threat-intelligence-automation" target="_blank">GitHub</a>
+  <section id="skills">
+    <div class="section-head"><span class="index">02</span><h2>Skills</h2></div>
+    <dl>
+      <div class="spec-row">
+        <dt>Threat Intel</dt>
+        <dd>IOC Enrichment · Threat Actor Profiling · MITRE ATT&amp;CK TTP Mapping · CTI Reporting · Alert Triage &amp; False-Positive Analysis</dd>
       </div>
-      <div class="card">
-        <h3>De-authentication Attack Drone</h3>
-        <p>Built a drone capable of performing de-authentication attacks on Wi-Fi networks.</p>
-        <a href="https://github.com/raywilliamm/De-authentication-Attack-Drone" target="_blank">GitHub</a>
+      <div class="spec-row">
+        <dt>Tools</dt>
+        <dd>SOCRadar · OpenCTI · VirusTotal · Shodan · MITRE ATT&amp;CK Navigator</dd>
       </div>
-      <div class="card">
-        <h3>AUST-Caf-POS</h3>
-        <p>Created a secure point-of-sale system for campus cafes.</p>
-        <a href="https://github.com/raywilliamm/AUST-Caf-POS" target="_blank">GitHub</a>
+      <div class="spec-row">
+        <dt>AI / ML</dt>
+        <dd>Ollama · Qwen · LLM Pipelines · Prompt Engineering · Claude API / Claude Code</dd>
       </div>
+      <div class="spec-row">
+        <dt>Languages</dt>
+        <dd>Python · Shell</dd>
+      </div>
+      <div class="spec-row">
+        <dt>Spoken</dt>
+        <dd>Arabic (native) · English (fluent) · French (conversational — DELF B1)</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section id="projects">
+    <div class="section-head"><span class="index">03</span><h2>Projects</h2></div>
+    <div class="entry-list">
+      <a class="entry" href="https://github.com/raywilliamm/Threat-intelligence-automation" target="_blank" rel="noopener">
+        <div class="entry-top">
+          <h3>Threat Intelligence Automation</h3>
+          <span class="arrow">view repo →</span>
+        </div>
+        <p>Automation scripts that take threat intel indicators and push malicious IPs straight onto a pfSense firewall — closing the loop between intel and active network defense.</p>
+        <div class="stack"><span>Python</span></div>
+      </a>
+      <a class="entry" href="https://github.com/raywilliamm/De-authentication-Attack-Drone" target="_blank" rel="noopener">
+        <div class="entry-top">
+          <h3>De-authentication Attack Drone</h3>
+          <span class="arrow">view repo →</span>
+        </div>
+        <p>University project: a Raspberry Pi-powered drone performing RF jamming and Wi-Fi de-authentication attacks, built for ethical wireless security testing and research.</p>
+        <div class="stack"><span>Shell</span><span>Raspberry Pi</span></div>
+      </a>
+      <a class="entry" href="https://github.com/raywilliamm/AUST-Caf-POS" target="_blank" rel="noopener">
+        <div class="entry-top">
+          <h3>AUST CAFÉ — POS System</h3>
+          <span class="arrow">view repo →</span>
+        </div>
+        <p>A point-of-sale system built for AUST campus cafés as a university project, covering order handling and transaction flow end to end.</p>
+        <div class="stack"><span>Python</span></div>
+      </a>
     </div>
   </section>
 
-  <section>
-    <h2>Contact</h2>
-    <div class="contact">
-      <div class="card">
-        <h4>LinkedIn</h4>
-        <a href="https://www.linkedin.com/in/ray-william-22aa441b3/" target="_blank">linkedin.com/in/ray-william</a>
-      </div>
-      <div class="card">
-        <h4>GitHub</h4>
-        <a href="https://github.com/raywilliamm" target="_blank">github.com/raywilliamm</a>
-      </div>
-        <p></p>
-      </div>
+  <section id="certs">
+    <div class="section-head"><span class="index">04</span><h2>Certifications</h2></div>
+    <p class="lede">
+      11 earned credentials spanning threat intelligence, MITRE ATT&amp;CK, offensive
+      security, networking, and languages — plus 4 more MAD20 certs in progress toward
+      the full track.
+    </p>
+    <p><a href="certifications.html">→ view all certifications, with verification links</a></p>
+  </section>
+
+  <section id="contact">
+    <div class="section-head"><span class="index">05</span><h2>Contact</h2></div>
+    <div class="entry-list">
+      <a class="entry" href="https://www.linkedin.com/in/ray-william-22aa441b3/" target="_blank" rel="noopener">
+        <div class="entry-top">
+          <h3>LinkedIn</h3>
+          <span class="arrow">connect →</span>
+        </div>
+        <p>Professional background, role history, recommendations.</p>
+        <div class="stack"><span>linkedin.com/in/ray-william</span></div>
+      </a>
+      <a class="entry" href="https://github.com/raywilliamm" target="_blank" rel="noopener">
+        <div class="entry-top">
+          <h3>GitHub</h3>
+          <span class="arrow">follow →</span>
+        </div>
+        <p>Code, automation scripts, and project repos.</p>
+        <div class="stack"><span>github.com/raywilliamm</span></div>
+      </a>
     </div>
   </section>
+
+  <footer>
+    Ray William — Threat Intelligence &amp; AI Security · Lebanon
+  </footer>
 </body>
 </html>
